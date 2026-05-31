@@ -20,9 +20,11 @@ Användaren kan :
 - Uppdatera befintliga poster
 - Radera poster
 
-Formulärdata valideras med JavaScript innan data skickas till API:et, så alla fält måste finnas med, och den dubbelkollas igen i API-appen.
+Formulärdata valideras med JavaScript innan data skickas till API:et. Alla fält måste finnas med förutom slutdatum, och de dubbelkollas igen i API-appen.
 
 Main.js har en funktion för varje del av CRUD-arbetsflödet, dessa körs när en sida laddas eller knapp klickas.
+
+Större delen av koden är exakt samma som föregående uppgift i kursen, men vissa ändringar gjordes för att hantera datatypen `DATE` i mongoDB och hur `_ID` fungerar i mongoDB.
 
 ---
 
