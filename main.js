@@ -24,7 +24,7 @@ async function getWorkExperience() {
 
             <div class="work-card-body">
                 <p><strong>Plats:</strong>${work.location}</p>
-                <p><strong>Period:</strong>${work.startdate} - ${work.enddate}</p>
+                <p><strong>Period:</strong>${work.startdate ? work.startdate.split("T")[0] : ""} - ${work.enddate ? work.enddate.split("T")[0] : ""}</p>
                 <p class="description">${work.description}</p>
             </div>
 
@@ -99,8 +99,8 @@ async function loadWorkExperience(id) {
     document.getElementById("companyname").value = work.companyname;
     document.getElementById("jobtitle").value = work.jobtitle;
     document.getElementById("location").value = work.location;
-    document.getElementById("startdate").value = work.startdate;
-    document.getElementById("enddate").value = work.enddate;
+    document.getElementById("startdate").value = work.startdate ? work.startdate.split("T")[0] : "";
+    document.getElementById("enddate").value = work.enddate ? work.enddate.split("T")[0] : "";
     document.getElementById("description").value = work.description;
 
 }
