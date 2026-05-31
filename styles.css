@@ -1,0 +1,166 @@
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+  box-sizing: border-box;
+}
+
+/* layout */
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #f4f4f4;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+    flex-grow: 1;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+section {
+  margin: 2rem 0;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  background-color: #fff;
+}
+
+/* elements */
+img, picture {
+  display: block;
+  max-width: 100%;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+hr, p, h2 {
+  margin: 1rem 0;
+}
+
+button {
+  padding: 1rem;
+  border: 1px solid #333;
+  border-radius: 0.75rem;
+  background: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+button:hover {
+  background: #f4f4f4;
+}
+
+input, textarea {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+}
+
+.row {
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.col {
+  display:flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+header {
+    width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 1rem 0;
+}
+
+header .container {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.logo a {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.nav {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav a {
+  transition: opacity 0.2s ease;
+}
+
+.nav a:hover {
+  opacity: 0.75;
+}
+
+.active {
+  text-decoration: underline;
+}
+
+/* responsive */
+@media (max-width: 800px) {
+  header .container{
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+
+  .nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+  }
+
+  .row {
+  flex-direction: column;
+  align-items: start;
+  }
+
+}
+
+.work-list {
+    display: grid;
+    gap: 1rem;
+}
+
+.work-card {
+    padding: 1rem;
+    margin: 1rem 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    justify-content: space-between;
+}
+
+.work-card-buttons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.work-card-buttons button {
+    padding: 12px;
+}

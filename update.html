@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Uppdatera arbetserfarenhet</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="main.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="/">WorkWork API</a>
+            </div>
+
+            <nav class="nav">
+                <a href="index.html">Lista</a>
+                <a href="add.html">Lägg till</a>
+                <a href="about.html">Om</a>
+            </nav>
+        </div>
+
+    </header>
+
+    <main>
+        <div class="container">
+            <section>
+                <h1>Uppdatera arbetserfarenhet</h1>
+                <form id="updateForm">
+
+                    <div class="row">
+                        <div class="col">
+                            <label for="companyname">Företagsnamn</label>
+                            <input type="text" id="companyname" name="companyname">
+                        </div>
+
+                        <div class="col">
+                            <label for="jobtitle">Jobbtitel</label>
+                            <input type="text" id="jobtitle" name="jobtitle">
+                        </div>
+
+                        <div class="col">
+                            <label for="location">Plats</label>
+                            <input type="text" id="location" name="location">
+                        </div>
+                    </div>
+
+                    <div class="row">
+
+                        <div class="col">
+                            <label for="startdate">Startdatum</label>
+                            <input type="date" id="startdate" name="startdate">
+                        </div>
+
+                        <div class="col">
+                            <label for="enddate">Slutdatum</label>
+                            <input type="date" id="enddate" name="enddate">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col">
+                            <label for="description">Beskrivning</label>
+                            <textarea id="description" name="description" rows="5"></textarea>
+                        </div>
+                    </div>
+
+                    <button type="submit">Uppdatera</button>
+
+                </form>
+
+                <p id="message"></p>
+            </section>
+        </div>
+    </main>
+
+</body>
+
+</html>
