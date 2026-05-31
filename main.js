@@ -30,7 +30,7 @@ async function getWorkExperience() {
 
             <div class="work-card-buttons row">
                 <a class="updateBtn" href="update.html?id=${work._id}"> Uppdatera </a>
-                <button class="deleteBtn" onclick="deleteWork(${work._id})">
+                <button class="deleteBtn" onclick="deleteWork('${work._id}')">
                     Radera
                 </button>
             </div>
